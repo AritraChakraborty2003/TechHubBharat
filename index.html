@@ -17,9 +17,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         
-            <div class="imageHolder2" style="">
+            <div class="imageHolder2">
                 <img src="images/logoTHB.png" alt="" srcset="">
             </div>
       
@@ -32,10 +33,10 @@
             <li class="nav-item active">
               <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="#">Courses</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown active">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Our Courses
               </a>
@@ -46,19 +47,19 @@
                 <a class="dropdown-item" href="#">Corporate Training</a>
               </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="#">Blogs</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="#">Careers</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="#">Gallery</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="#">Team</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="#">Contact</a>
               </li>
           </ul>
@@ -68,6 +69,11 @@
           </form>
         </div>
       </nav>
+
+    <!----->
+
+
+    <!---Banner Part-->
     <div class="container-fluid banner">
         <div class="banner row  flex-column-reverse flex-lg-row">
             <div class="b_left ban col-lg-6">
@@ -94,6 +100,30 @@
             </div>
         </div>
     </div> 
+    <!----->
+<!---About Section-->
+    <div class="container-fluid About ">
+        <p class="AboutHeader" style="text-align: center;">About Us</p>
+        <div class="container-fluid mainAboutContainer ">
+            <div class="row">
+                <div class="col-lg-6 ab1 ab">
+                    <div class="iconAbtHolder">
+                        <img src="images/logoTHB.png" alt="logo" srcset="">
+                    </div>
+                </div>
+                <div class="col-lg-6 ab2 ab">
+                    <p class="abtText"><b>TechHubBharat</b> is one of the leading startups in the technology domain.At <b>TechHubBharat</b> we provide development services ranging from Fullstack Web Development , Android Development , Software Consulting , <b>IOT based project</b> development to online courses and offline training programs in the <b>technical domain</b> for <b>students</b>,working professionals and the <b>corporates</b>.The company focuses on promoting a very professional and supportive relation between our clients and the company.
+                        With an <b>experienced</b> team in technical and management domain we thrive to become not only a company for <b>professionalism</b> but also to become a company of <b>values</b>.
+                    </p>
+
+                    <div class="btnHolder3" style="display: flex;justify-content: center;align-items: center;margin-top: 2.6vmin;">
+                        <button class="abt_rm" style="background-color: #f87929; color: white;border: 1px solid white;">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----->
 </body>
 </html>
 <style>
@@ -103,7 +133,11 @@
         box-sizing: border-box;
        
     }
-    @media(max-width:901px){
+/*--- Mobile and tab Screen css */
+    @media(max-width:700px){
+    .About{
+        margin-top: 7vmin;
+    }
     .banner{
      
         padding-bottom: 2vmin;
@@ -122,7 +156,7 @@
     }
     
     .tagLine{
-        font-size: 6vmin;
+        font-size: 6.55vmin;
         font-family: 'Open Sans', sans-serif;
         font-family: 'Poppins', sans-serif;
         font-weight: bolder;
@@ -131,13 +165,138 @@
         font-family: 'Open Sans', sans-serif;
         font-family: 'Poppins', sans-serif;
     }
+    .AboutHeader{
+        font-size: 7.5vmin;
+        font-weight: bold;
+        color: rgb(255, 118, 7);
+    }
+    
+    .ab{
+        padding: 3vmin;
+    }
+    .ab1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .iconAbtHolder{
+        height:60vmin;
+        width:60vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 35vmin;
+        padding: 1.5vmin;
+        border:7px solid #ff6200;
+        box-shadow: 5px 7px 15px 14px;
+        
+    }
+    .ab2{
+        margin-top: 5vmin;
+    }
+    
+    .abt_rm{
+        font-size: 4.75vmin;
+        padding: 1vmin;
+    }
+    
 }
 
-@media(min-width:902px){
+@media(min-width:701px) and (max-width:900px){
+    .About{
+        margin-top: 7vmin;
+    }
+    .banner{
+     
+        padding-bottom: 2vmin;
+    }
+    .imageHolder2{
+        height: 9.5vmin; width: 30vmin;
+    }
     
+    .b_right{
+        display: flex;
+       
+        margin-top: 5vmin;
+   
+        justify-content: center;
+        
+    }
+    
+    .tagLine{
+        font-size: 6.55vmin;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+    }
+    .supportText{
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+    }
+    .AboutHeader{
+        font-size: 7.5vmin;
+        font-weight: bold;
+        color: rgb(255, 118, 7);
+    }
+    
+    .ab{
+        padding: 3vmin;
+    }
+    .ab1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .iconAbtHolder{
+        height:48vmin;
+        width:48vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 24vmin;
+        padding: 1.5vmin;
+        border:7px solid #ff6200;
+        box-shadow: 5px 7px 15px 14px;
+        
+    }
+    .ab2{
+        margin-top: 1.15vmin;
+    }
+    .abtText{
+        font-size: 2.75vmin;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .abt_rm{
+        font-size: 3.5vmin;
+        padding: 1vmin;
+    }
+}
+/*---- End for mobile and tab screens ---*/
+
+/*--- For Mini and medium Laptops(13.5 to 14 inch eg: macbook-air) */
+@media(min-width:901px) and (max-width:1280px){
+    .iconAbtHolder{
+        height:54vmin;
+        width:54vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 27vmin;
+        padding: 1.5vmin;
+        border:12px solid #f87929;
+        box-shadow: 5px 7px 15px 10px;
+        
+    }
+    .ab1{
+        display: flex;
+        justify-content: center;
+      
+    }
     .bannerImage{
        
-        width:95vmin;
+        width:105vmin;
         display: flex;
         justify-content: flex-end;
        
@@ -165,16 +324,17 @@
     }
     .textbox{
         margin-top: 21vmin;
+      
     }
 
     .tagLine{
-        font-size: 7vmin;
+        font-size: 5.87vmin;
         font-family: 'Open Sans', sans-serif;
         font-family: 'Poppins', sans-serif;
         font-weight: bolder;
     }
-    .supportText{
-        font-size: 4vmin;
+    .supportDivText{
+        font-size: 2.45vmin;
         font-family: 'Open Sans', sans-serif;
         font-family: 'Poppins', sans-serif;
     }
@@ -187,6 +347,305 @@
         padding: 0.75vmin;
         
     }
+    .AboutHeader{
+        font-size: 7.5vmin;
+        font-weight: bold;
+        color: rgb(255, 118, 7);
+    }
+    .ab{padding: 3vmin;}
+    
+    .abtText{
+        font-size: 2.7vmin;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+    }
+    .abt_rm{
+        font-size: 2.75vmin;
+        padding: 1vmin;
+    }
+
+}
+
+/*-----End for macbook-air sized laptops ----*/
+
+/*--- For Large laptop screens(15.6inch)(Ex:- HP-Omen)---*/
+@media(min-width:1281px) and (max-width:1727px){
+  
+    .iconAbtHolder{
+        height:60vmin;
+        width:60vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 35vmin;
+        padding: 1.5vmin;
+        margin-top: 6.5vmin;
+        border:12px solid #f87929;
+        box-shadow: 5px 7px 15px 10px;
+        
+    }
+    .ab1{
+        display: flex;
+        justify-content: center;
+       
+    }
+    .bannerImage{
+       
+        width:105vmin;
+        display: flex;
+        justify-content: flex-end;
+       
+    }
+    .imageHolder2{
+        height: 6.35vmin; width: 35vmin;
+    }
+    .b_right{
+        display: flex;
+
+        justify-content: center;
+    }
+    .b_left{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .bannerImage{
+       
+        height: 85vmin;
+        width: 100vmin;
+        margin-top: 3vmin;
+       
+
+    }
+    .textbox{
+        margin-top: 21vmin;
+      
+    }
+
+    .tagLine{
+        font-size: 8.05vmin;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+    }
+    .supportDivText{
+        font-size: 2.45vmin;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+    }
+    .start{
+        font-size: 2.75vmin;
+        padding: 0.75vmin;
+    }
+    .portfolio{
+        font-size: 2.75vmin;
+        padding: 0.75vmin;
+        
+    }
+    .AboutHeader{
+        font-size: 7.5vmin;
+        font-weight: bold;
+        color: rgb(255, 118, 7);
+    }
+    .ab{padding: 3vmin;}
+
+    .abtText{
+        font-size: 3.65vmin;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+    }
+    .abt_rm{
+        font-size: 2.75vmin;
+        padding: 1vmin;
+    }
+
+}
+/*--- End of Large Screen code ---*/
+/*--- For Very Large laptop screens (Ex:- Large Dell Latitude Screens,Macbook Pro)---*/
+@media(min-width:1728px) and (max-width:2047px){
+    .iconAbtHolder{
+        height:54vmin;
+        
+        width:54vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 27vmin;
+        padding: 1.5vmin;
+        border:12px solid #f87929;
+        box-shadow: 5px 7px 15px 10px;
+        
+    }
+    .ab1{
+        display: flex;
+        justify-content: center;
+       
+    }
+    .bannerImage{
+       
+        width:105vmin;
+        display: flex;
+        justify-content: flex-end;
+       
+    }
+    .imageHolder2{
+        height: 6.35vmin; width: 35vmin;
+    }
+    .b_right{
+        display: flex;
+
+        justify-content: center;
+    }
+    .b_left{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .bannerImage{
+       
+        height: 85vmin;
+        width: 100vmin;
+        margin-top: 3vmin;
+       
+
+    }
+    .textbox{
+        margin-top: 21vmin;
+      
+    }
+
+    .tagLine{
+        font-size: 6vmin;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+    }
+    .supportDivText{
+        font-size: 2.45vmin;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+    }
+    .start{
+        font-size: 2.75vmin;
+        padding: 0.75vmin;
+    }
+    .portfolio{
+        font-size: 2.75vmin;
+        padding: 0.75vmin;
+        
+    }
+    .AboutHeader{
+        font-size: 7.5vmin;
+        font-weight: bold;
+        color: rgb(255, 118, 7);
+    }
+    .ab{padding: 3vmin;}
+    .abtText{
+        font-size: 2.7vmin;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+    }
+    .abt_rm{
+        font-size: 2.75vmin;
+        padding: 1vmin;
+    }
+
+
+}
+   
+    img{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+/*--- For XX Large screens (Ex:- TVs,IMacs...)---*/
+    @media(min-width:2048px){
+    .iconAbtHolder{
+        height:66vmin;
+        width:66vmin;
+        display: flex;
+        margin-top: 3.15vmin;
+        justify-content: center;
+        align-items: center;
+        border-radius: 33vmin;
+        padding: 1.5vmin;
+        border:12px solid #f87929;
+        box-shadow: 5px 7px 15px 10px;
+        
+    }
+    .ab1{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .bannerImage{
+       
+        width:105vmin;
+        display: flex;
+        justify-content: flex-end;
+       
+    }
+    .imageHolder2{
+        height: 6.35vmin; width: 35vmin;
+    }
+    .b_right{
+        display: flex;
+
+        justify-content: center;
+    }
+    .b_left{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .bannerImage{
+       
+        height: 85vmin;
+        width: 100vmin;
+        margin-top: 3vmin;
+       
+
+    }
+    .textbox{
+        margin-top: 21vmin;
+      
+    }
+
+    .tagLine{
+        font-size: 6.75vmin;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+    }
+    .supportDivText{
+        font-size: 2.45vmin;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+    }
+    .start{
+        font-size: 2.75vmin;
+        padding: 0.75vmin;
+    }
+    .portfolio{
+        font-size: 2.75vmin;
+        padding: 0.75vmin;
+        
+    }
+    .AboutHeader{
+        font-size: 7.5vmin;
+        font-weight: bold;
+        color: rgb(255, 118, 7);
+    }
+    .ab{padding: 3vmin;}
+    .abtText{
+        font-size: 3.4vmin;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+    }
+    .abt_rm{
+        font-size: 2.75vmin;
+        padding: 1vmin;
+    }
 
 }
    
@@ -197,8 +656,8 @@
     }
 
 
-/* For supportDivText */
 
+/* helper css code*/
 @media(max-width:700px){
     .start{
         font-size: 4vmin;
