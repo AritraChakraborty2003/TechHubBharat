@@ -68,13 +68,27 @@
     </div>
 
 
- Hi
-    
+
+    hi
 
     
 </body>
 </html>
 <style>
+     .member-card{
+        transition: transform .2s;
+      
+    }
+    .member-card-1{
+        transition: transform .2s;
+     
+    }
+    .member-card:hover {
+        transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+    .member-card-1:hover{
+        transform: scale(1.1);
+    }
     *{
         margin: 0;
         padding: 0;
@@ -104,20 +118,22 @@
         .tagText{
             border:1px solid black;
             position: absolute;
-            top: 77%;
+            top: 72%;
             color: white;
             width:62vmin;
+            padding: 2.5vmin;
             background-color: black;
             opacity: 0.8;
           
         }
 
         .tagText1{
+            padding: 2.5vmin;
             border:1px solid black;
             position: absolute;
-            top: 75%;
+            top: 69%;
             color: white;
-            width:62vmin;
+            width:61vmin;
             background-color: black;
             opacity: 0.75;
           
@@ -126,7 +142,8 @@
         .tagText2{
             border:1px solid black;
             position: absolute;
-            top: 76%;
+            top: 69%;
+            padding: 2.5vmin;
             color: white;
             width:65vmin;
             background-color: black;
@@ -231,4 +248,86 @@
             letter-spacing: 0.35vmin;
         }
      }
+     
+@media(min-width:701px) and (max-width:900px){
+    .row2BOD {
+            margin-top: 3vmin;
+        }
+        .member-card{
+             height:63vmin;
+             position: relative;
+             margin-top: 5vmin;
+             width: 60vmin;
+             
+        }
+        .member-card-1{
+             height:57vmin;
+             position: relative;
+             margin-top: 5vmin;
+             width:57vmin;
+        }
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .tagText{
+            border:1px solid black;
+            position: absolute;
+            top: 77%;
+            color: white;
+            width:38vmin;
+            background-color: black;
+            opacity: 0.8;
+          
+        }
+        .tagText1{
+            border:1px solid black;
+            position: absolute;
+            top: 77%;
+            color: white;
+            width:41vmin;
+            background-color: black;
+            opacity: 0.75;
+          
+        }
+        .tagText2{
+            border:1px solid black;
+            position: absolute;
+            top: 73%;
+            color: white;
+            width:41.15vmin;
+            background-color: black;
+            opacity: 0.75;
+          
+        }
+        
+        .name{
+            font-size: 3.5vmin;
+            padding-left: 1vmin;
+            font-weight: bold;
+        }
+        .desig{
+            font-size: 2.75vmin;
+            margin-top: -2vmin;
+            font-weight: bold;
+            padding-left: 1vmin;
+        }
+        .boardHeader{
+            font-size: 5vmin;
+            margin-left: 3vmin;
+        }
+        .boardHeaderSlogan{
+            font-size: 2.75vmin;
+            letter-spacing: 0.35vmin;
+        }
+       
+
+
+}
 </style>
