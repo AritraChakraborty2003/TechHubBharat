@@ -12,7 +12,7 @@
 <body>
 
     <div class="mainClass container-fluid ">
-        <div class="contaier jumbotron" style="height: 20vmin;  margin-left: 2vw;margin-top: 1vmin;background-color:rgb(255, 124, 48); display: flex; justify-content: center; align-items: center;color: white; font-weight: bold;">
+        <div class="container-fuid jumbotron" style="height: 20vmin; margin-top: 2.5vmin;background-color:rgb(255, 124, 48); display: flex; justify-content: center; align-items: center;color: white; font-weight: bold;">
                 <p><span class="boardHeader">Our Team</span><br>
                     <span class="boardHeaderSlogan">(The Team managing TechHubBharat)</span>
                 </p>
@@ -25,8 +25,8 @@
             </div>
     
             <div class="imgText"></div>
-             <p style="text-align: center;margin-top: 2vmin;font-weight: bold;">Somnath Chakraborty</p>
-             <p style="text-align: center;margin-top: 2vmin;">Chairman & CFO</p>
+             <p class="name" style="text-align: center;margin-top: 2vmin;font-weight: bold;">Somnath Chakraborty</p>
+             <p class="desig" style="text-align: center;margin-top: 2vmin;">Group Chairman & CFO</p>
          </div>
    
         <div class="container-card" style="margin-left: 5vmin;padding: 2.5vmin;">
@@ -35,8 +35,8 @@
         </div>
 
         <div class="imgText"></div>
-         <p style="text-align: center;margin-top: 2vmin;font-weight: bold;">Aritra Chakraborty</p>
-         <p style="text-align: center;margin-top: 2vmin;">Managing Director & CTO</p>
+         <p class="name" style="text-align: center;margin-top: 2vmin;font-weight: bold;">Aritra Chakraborty</p>
+         <p class="desig" style="text-align: center;margin-top: 2vmin;">Managing Director & CTO</p>
      </div>
 
     <br>
@@ -46,12 +46,61 @@
         </div>
 
         <div class="imgText"></div>
-         <p style="text-align: center;margin-top: 2vmin;font-weight: bold;">Abhishek Kr. Pandey</p>
-         <p style="text-align: center;margin-top: 2vmin;">Executive Director & CEO</p>
+         <p class="name" style="text-align: center;margin-top: 2vmin;font-weight: bold;">Abhishek Kr. Pandey</p>
+         <p class="desig" style="text-align: center;margin-top: 2vmin;">Executive Director & CEO</p>
      </div>
     
     
     <br>
+    <div class="container-card" style="margin-left: 5vmin;padding: 2.5vmin;">
+        <div class="img-container" style="display: flex;justify-content: center;">
+          <img src="images/tushar.jpeg" alt="" width="200" height="200" style="border-radius: 100px;">
+        </div>
+
+        <div class="imgText"></div>
+         <p class="name" style="text-align: center;margin-top: 2vmin;font-weight: bold;">Tushar Solanki</p>
+         <p class="desig" style="text-align: center;margin-top: 2vmin;">Vice President Operations</p>
+     </div>
+
+    <div class="container-card" style="margin-left: 5vmin;padding: 2.5vmin;">
+    <div class="img-container" style="display: flex;justify-content: center;">
+      <img src="images/udit.jpg" alt="udit" width="200" height="200" style="border-radius: 100px;">
+    </div>
+
+    <div class="imgText"></div>
+     <p class="name" style="text-align: center;margin-top: 2vmin;font-weight: bold;">Udit Mudgal</p>
+     <p class="desig" style="text-align: center;margin-top: 2vmin;">Vice President Software Development</p>
+ </div>
+
+<br>
+<div class="container-card" style="margin-left: 5vmin;padding: 2.5vmin;">
+    <div class="img-container" style="display: flex;justify-content: center;">
+      <img src="images/shivam.jpeg" alt="shivam" width="200" height="200" style="border-radius: 100px;">
+    </div>
+
+    <div class="imgText"></div>
+     <p class="name" style="text-align: center;margin-top: 2vmin;font-weight: bold;">Shivam Kumar</p>
+     <p class="desig" style="text-align: center;margin-top: 2vmin;">Vice President CyberSecurity</p>
+ </div>
+
+
+<br>
+   
+    </div>
+    <div class="container-fluid" style="display: flex;justify-content: center;flex-wrap: wrap;margin-top: 0.15vmin;">
+    
+    <div class="container-card" style="margin-left: 5vmin;padding: 2.5vmin;">
+    <div class="img-container" style="display: flex;justify-content: center;">
+      <img src="images/udit.jpg" alt="udit" width="200" height="200" style="border-radius: 100px;">
+    </div>
+
+    <div class="imgText"></div>
+     <p class="name" style="text-align: center;margin-top: 2vmin;font-weight: bold;">Anish Gupta</p>
+     <p class="desig" style="text-align: center;margin-top: 2vmin;">Marketing Head (Online courses)</p>
+ </div>
+
+
+<br>
    
     </div>
 </body>
@@ -60,8 +109,8 @@
 <style>
 
     *{
-        padding: 0;
-        margin: 0;
+        padding: 0px;
+        margin: 0px;
         box-sizing: border-box;
     }
     .container{
@@ -80,8 +129,8 @@
         
     }
     .container-card:hover{
-        border:3.5px solid rgb(255, 106, 0);
-        box-shadow: 1px 1px 10px 1px;
+        border:1.75px solid rgb(255, 106, 0);
+        box-shadow: 1px 3px 10px 2px;
     }
     .boardHeader{
             font-size: 7vmin;
@@ -105,9 +154,17 @@
         }
 
         @media(min-width: 901px) and (max-width:2047px){
+            
             .container-card{
                    width:57vmin;
                    margin-top: 5vmin;
+            }
+            .name{
+                font-size:4vmin;
+            }
+            .desig{
+                font-size: 2.85vmin;
+                font-weight: 590;
             }
         }
 
@@ -116,6 +173,13 @@
             .container-card{
                    width:50vmin;
                    margin-top: 5vmin;
+            }
+            .name{
+                font-size:4vmin;
+            }
+            .desig{
+                font-size: 2.85vmin;
+                font-weight: 590;
             }
         }
 
