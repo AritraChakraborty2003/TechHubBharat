@@ -11,12 +11,54 @@
 </head>
 <body>
 
-    <div class="mainClass container-fluid ">
-        <div class="container-fuid jumbotron" style="height: 20vmin; margin-top: 2.5vmin;background-color:rgb(255, 124, 48); display: flex; justify-content: center; align-items: center;color: white; font-weight: bold;">
-                <p><span class="boardHeader">Our Team</span><br>
-                    <span class="boardHeaderSlogan">(The Team managing TechHubBharat)</span>
-                </p>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <div class="imageHolder3">
+            <img class="logo" src="images/logoTHB.png" alt="" srcset="">
         </div>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Our Courses
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Online Courses</a>
+            <a class="dropdown-item" href="#">Offline Training</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Corporate Training</a>
+          </div>
+        </li>
+        
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+          
+          <li class="nav-item active">
+            <a class="nav-link" href="team.html" target="_blank">main</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Projects</a>
+         
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav> 
+  <div class="textBox" style="margin-top: 2.5vmin;">
+    <p style="text-align: center;font-weight: 750;font-size: 8vmin;">Our Team
+     
+    </p>
+  </div>
     
     <div class="container-fluid" style="display: flex;justify-content: center;flex-wrap: wrap;margin-top: 0.15vmin;">
         <div class="container-card" style="margin-left: 5vmin;padding: 2.5vmin;">
@@ -59,17 +101,17 @@
 
         <div class="imgText"></div>
          <p class="name" style="text-align: center;margin-top: 2vmin;font-weight: bold;">Tushar Solanki</p>
-         <p class="desig" style="text-align: center;margin-top: 2vmin;">Vice President Operations</p>
+         <p class="desig" style="text-align: center;margin-top: 2vmin;">Vice President Operations and Marketing</p>
      </div>
 
     <div class="container-card" style="margin-left: 5vmin;padding: 2.5vmin;">
     <div class="img-container" style="display: flex;justify-content: center;">
-      <img src="images/udit.jpg" alt="udit" width="200" height="200" style="border-radius: 100px;">
+      <img src="images/udit.jpeg" alt="udit" width="200" height="200" style="border-radius: 100px;">
     </div>
 
     <div class="imgText"></div>
      <p class="name" style="text-align: center;margin-top: 2vmin;font-weight: bold;">Udit Mudgal</p>
-     <p class="desig" style="text-align: center;margin-top: 2vmin;">Vice President Software Development</p>
+     <p class="desig" style="text-align: center;margin-top: 2vmin;">Vice President Development and Documentation Head</p>
  </div>
 
 <br>
@@ -88,7 +130,18 @@
    
     </div>
     <div class="container-fluid" style="display: flex;justify-content: center;flex-wrap: wrap;margin-top: 0.15vmin;">
+   
+        <div class="container-fluid" style="display: flex;justify-content: center;flex-wrap: wrap;margin-top: 0.15vmin;">
     
+            <div class="container-card" style="margin-left: 5vmin;padding: 2.5vmin;">
+            <div class="img-container" style="display: flex;justify-content: center;">
+              <img src="images/udit.jpg" alt="udit" width="200" height="200" style="border-radius: 100px;">
+            </div>
+        
+            <div class="imgText"></div>
+             <p class="name" style="text-align: center;margin-top: 2vmin;font-weight: bold;">Sumit Verma</p>
+             <p class="desig" style="text-align: center;margin-top: 2vmin;">Vice President Q/A and PR Head</p>
+         </div>  
     <div class="container-card" style="margin-left: 5vmin;padding: 2.5vmin;">
     <div class="img-container" style="display: flex;justify-content: center;">
       <img src="images/udit.jpg" alt="udit" width="200" height="200" style="border-radius: 100px;">
@@ -98,6 +151,8 @@
      <p class="name" style="text-align: center;margin-top: 2vmin;font-weight: bold;">Anish Gupta</p>
      <p class="desig" style="text-align: center;margin-top: 2vmin;">Marketing Head (Online courses)</p>
  </div>
+
+ 
 
 
 <br>
@@ -183,6 +238,13 @@
             }
         }
 
-
+        .imageHolder3{
+        height: 6.35vmin; width: 35vmin;
+    }
+    .logo{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
 
 </style>
