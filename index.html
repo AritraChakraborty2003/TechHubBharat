@@ -445,26 +445,26 @@
 
     <!----Footer Section-->
     <footer>
-        <div class="footer" style="margin-top: 10vmin;height:70vmin;background:  linear-gradient(45deg, rgb(248, 117, 18), rgb(255, 238, 238));color: white;display: flex;">
-            <div class="col-lg-3" style="height: 69vmin;display: flex;justify-content: center;align-items: center;">
+        <div class="footer" style="margin-top: 10vmin;background:  linear-gradient(to bottom right, rgb(248, 117, 18), rgb(255, 186, 157));color: white;display: flex;flex-wrap: wrap;">
+            <div class="col-lg-4" style="display: flex;justify-content: center;align-items: center;">
              <div class="content" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
                 <div class="iconAbtHolder1">
                     <img src="images/logoTHB.png" alt="logo" srcset="">
                 </div>
-                <p style="font-size: 2.75vmin;color: white;margin-top: 1.5vmin;font-weight: 480;">" TechHubBharat is the onestop solution<br> for
+                <p style="color: white;margin-top: 1.5vmin;font-weight: 480;"class="footerDescr">" TechHubBharat is the onestop solution<br> for
                 your technical needs and aspirations "</p>
 
 
                 <br>
           
-                <p style="font-weight: bold;font-size: 2.45vmin;">@ 2024 TechHubBharat Private Limited</p>
+                <p style="font-weight: bold;" class="footerSlogan">@ 2024 TechHubBharat Private Limited</p>
                 </div>
             </div>
-            <div class="col-lg-3" style="height: 69vmin;display: flex;justify-content: center;align-items: center;">
-                <div class="textHolder" style="display: flex;justify-content: center;align-items: center;">
+            <div class="col-lg-2" style="margin-top: 5vmin;">
+                <div class="textHolder" style="">
                     <div class="contentText">
-                    <p style="font-weight: bold;font-size: 4.35vmin;">
-                        Quick Links?
+                    <p style="font-weight: bold;;"class="footerTitle">
+                        Quick Links ?
                     </p>
                         <p>Courses</p>
                         <p>About</p>
@@ -477,10 +477,10 @@
                    
                 </div>
             </div>
-            <div class="col-lg-3 border" style="height: 69vmin;display: flex;justify-content: center;align-items: center;">
-                <div class="textHolder" style="display: flex;justify-content: center;align-items: center;">
+            <div class="col-lg-3" style="margin-top: 5vmin;">
+                <div class="textHolder">
                     <div class="contentText">
-                    <p style="font-weight: bold;font-size: 4.35vmin;">
+                    <p style="font-weight: bold;" class="footerTitle">
                         Contact
                     </p>
                         <p>Plot No 19/20, IIMT COLLEGE OF MANAGEMENT, 20-A, Knowledge Park III, Greater Noida, Uttar Pradesh 201310</p>
@@ -495,8 +495,40 @@
                    
                 </div>
             </div>
-            <div class="col-lg-3 border" style="height: 69vmin;">
-                
+            <div class="col-lg-3 " style="margin-top: 5vmin;" >
+                <div class="textHolder">
+                    <div class="contentText">
+                    <p style="font-weight: bold;" class="footerTitle">
+                        Social Links
+                    </p>
+                        <div class="social-links" style="display: flex;justify-content: center;align-items: center;margin-top: 4.5vmin;">
+                            <div class="imgHold" style="height: 7vmin;width: 7vmin;">
+                            <img src="images/linkedin1.png" alt="" srcset="" style="max-width: 100%;max-height: 100%;object-fit: contain;" height="200" width="200">
+                            </div>
+                            <div class="imgHold" style="height: 7vmin;width: 7vmin;margin-left: 4vmin;">
+                                <img src="images/facebook.png" alt="" srcset="" style="max-width: 100%;max-height: 100%;object-fit: contain;" height="200" width="200">
+                                </div>
+                                <div class="imgHold" style="height: 7vmin;width: 7vmin;margin-left: 4vmin;">
+                                    <img src="images/twitter.png" alt="" srcset="" style="max-width: 100%;max-height: 100%;object-fit: contain;" height="200" width="200">
+                                </div>
+
+                                <div class="imgHold" style="height: 8vmin;width: 8vmin;margin-left: 4vmin;">
+                                    <img src="images/instgram1.png" alt="" srcset="" style="max-width: 100%;max-height: 100%;object-fit: contain;" height="200" width="200">
+                                </div>
+
+                                <div class="imgHold" style="height: 7vmin;width: 7vmin;margin-left: 4vmin;">
+                                    <img src="images/whatsapp.webp" alt="" srcset="" style="max-width: 100%;max-height: 100%;object-fit: contain;" height="200" width="200">
+                                </div>
+                            
+
+                        </div>
+
+                        <div class="mapouter" style="margin-top: 5vmin;"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=IIMT Business  Ladder&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+                        
+                        
+                    </div>
+                   
+                </div>
             </div>
         </div>
     </footer>
@@ -535,6 +567,12 @@ var typed=new Typed(".float",{
 }
 /*--- Mobile and tab Screen css */
     @media(max-width:700px){
+        .content{
+            margin-top: 7vmin;
+        }
+        .footerSlogan{
+            margin-top: -5vmin;
+        }
     .imageHolderContact{
         height: 33vmin;
         width:33vmin;
@@ -606,8 +644,11 @@ var typed=new Typed(".float",{
         padding: 1.5vmin;
         border:7px solid white;
         background-color: white;
-        box-shadow: 5px 7px 15px 14px;
         
+        
+    }
+    .footerSlogan{
+        font-size: 3.85vmin;
     }
     .ab2{
         margin-top: 5vmin;
@@ -662,9 +703,17 @@ var typed=new Typed(".float",{
     padding-bottom: 2.45vmin;
     margin-top: 7.5vmin;
    }
+   .footerTitle{
+            font-size: 5vmin;
+        }
+      
+   
 }
 
 @media(min-width:701px) and (max-width:900px){
+    .footerSlogan{
+            margin-top: -5vmin;
+        }
     .imageHolderContact{
         height: 19vmin;
         width:19vmin;
@@ -723,6 +772,19 @@ var typed=new Typed(".float",{
         padding: 1.5vmin;
         border:7px solid #ff6200;
         box-shadow: 5px 7px 15px 14px;
+        
+    }
+    .iconAbtHolder1{
+        height:30vmin;
+        width:30vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15vmin;
+        padding: 1.5vmin;
+        border:7px solid white;
+        background-color: white;
+       
         
     }
     .ab2{
@@ -793,6 +855,12 @@ var typed=new Typed(".float",{
 
 /*--- For Mini and medium Laptops(13.5eg: macbook-air) */
 @media(min-width:901px) and (max-width:1280px){
+    .footerSlogan{
+            margin-top: -5vmin;
+        }
+        .footerTitle{
+            font-size: 4.35vmin;
+        }
     .imageHolderContact{
         height: 57vmin;
         width:57vmin;
@@ -892,7 +960,9 @@ var typed=new Typed(".float",{
    .bCardHolder{
     padding: 3vmin;
    }
-  
+   .textHolder{
+    margin-top: 7vmin;
+   }
    
    .bcard{
      width:22rem ;
@@ -1339,6 +1409,19 @@ var typed=new Typed(".float",{
         box-shadow: 5px 7px 15px 14px;
         
     }
+    .iconAbtHolder1{
+        height:30vmin;
+        width:30vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15vmin;
+        padding: 1.5vmin;
+        border:7px solid white;
+        background-color: white;
+        box-shadow: 5px 7px 15px 14px;
+        
+    }
     .bannerImage{
        
         height: 85vmin;
@@ -1430,6 +1513,22 @@ var typed=new Typed(".float",{
     }
 /*--- For XX Large screens (Ex:- TVs,IMacs...)---*/
     @media(min-width:2048px){
+        .footerDescr{
+            font-size: 2.35vmin;
+        }
+        .footerSlogan{
+            margin-top: -1.25vmin;
+            font-size: 1.95vmin;
+        }
+        .contentText{
+            font-size: 1.75vmin;
+        }
+        .footerDescr{
+            font-size: 2vmin;
+        }
+        .footerTitle{
+            font-size: 2.75vmin;
+        }
         .btnAsk{
             font-size: 2vmin;
             margin-top: 0.65vmin;
@@ -1437,6 +1536,19 @@ var typed=new Typed(".float",{
         .contactForm{
             margin-left: -6vmin;
         }
+        .iconAbtHolder1{
+        height:20vmin;
+        width:20vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10vmin;
+        padding: 1.5vmin;
+        border:7px solid white;
+        background-color: white;
+       
+        
+    }
     .contactForm
     {
         font-size: 1.87vmin;
